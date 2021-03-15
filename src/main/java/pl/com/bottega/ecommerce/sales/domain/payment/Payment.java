@@ -30,6 +30,10 @@ public class Payment {
         this.amount = amount;
     }
 
+    public Payment returnObject(Id id, ClientData clientData, Money amount) {
+        return new Payment(id, clientData, amount);
+    }
+
     public Payment rollBack() {
         Id id = Id.generate();
 

@@ -68,4 +68,8 @@ public class Invoice {
         return gros;
     }
 
+    public Invoice returnObject(Id id,ClientData clientData)
+    {
+        return new Invoice(id,clientData);
+    }
 }
